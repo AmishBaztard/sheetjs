@@ -64,12 +64,12 @@ expected to handle:
 Testing with cURL is straightforward:
 
 ```bash
-# upload test.xls and update data
-curl -X POST -F "data=@test.xls" http://localhost:7262/
+# upload sheetjs.csv and update data
+curl -X POST -F "data=@sheetjs.csv" http://localhost:7262/
 # download data in SYLK format
 curl -X GET http://localhost:7262/?t=slk
-# read sheetjs.xlsx from the server directory
-curl -X POST http://localhost:7262/?f=sheetjs.xlsx
+# read sheetjs.csv from the server directory
+curl -X POST http://localhost:7262/?f=sheetjs.csv
 # write sheetjs.xlsb in the XLSB format
 curl -X GET http://localhost:7262/?f=sheetjs.xlsb
 ```
